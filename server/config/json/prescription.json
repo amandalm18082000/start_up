@@ -1,0 +1,50 @@
+[
+    {
+        "createDate": "10-11-2022",
+        "doctorIdInHospital": "1",
+        "patientIdInHospital": "1",
+        "note": "Kiểm tra lại vào tuần sau",
+        "listDrug": [
+            {
+                "drugName": "Panadol",
+                "dosage": "Sáng 1 viên, Chiều 1 viên, Chiều 1 viên"
+            },
+            {
+                "drugName": "Amox",
+                "dosage": "Sáng 1 viên, Chiều 1 viên"
+            }
+        ]
+    },
+    {
+        "createDate": "10-11-2022",
+        "doctorIdInHospital": "1",
+        "patientIdInHospital": "1",
+        "note": "Kiểm tra lại vào tuần sau",
+        "listDrug": [
+            {
+                "drugName": "Panadol",
+                "dosage": "Sáng 1 viên, Chiều 1 viên, Chiều 1 viên"
+            },
+            {
+                "drugName": "Amox",
+                "dosage": "Sáng 1 viên, Chiều 1 viên"
+            }
+        ]
+    },
+    {
+        "createDate": "10-11-2022",
+        "doctorIdInHospital": "1",
+        "patientIdInHospital": "1",
+        "note": "Kiểm tra lại vào tuần sau",
+        "listDrug": [
+            {
+                "drugName": "Panadol",
+                "dosage": "Sáng 1 viên, Chiều 1 viên, Chiều 1 viên"
+            },
+            {
+                "drugName": "Amox",
+                "dosage": "Sáng 1 viên, Chiều 1 viên"
+            }
+        ]
+    }
+]

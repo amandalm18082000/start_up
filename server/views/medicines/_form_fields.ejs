@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="name">Name</label>
+  <input required value="<%= drug.name %>" type="text" name="name" id="name" class="form-control">
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" class="form-control"><%= drug.description %></textarea>
+</div>
+
+<a href="/medicines" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>

@@ -1,0 +1,102 @@
+<style>
+    nav{
+        font-family: "Classic Grotesque";
+        background: #dbff8f;
+        /*background-image: url("/home/assets/img/background/hoa_dao.png");*/
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light">
+<!--    <img src="/home/assets/img/background/cau-doi.png" width="80px">-->
+<!--    <a class="navbar-brand" href="/">CH</a>-->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <i class="fa fa-house" style="font-size: 2.5rem;"></i>
+                    <span class="sr-only">(current)</span></a>
+            </li>
+            <% if(role && role !== "Admin") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/articles">
+                        <i class="fa-brands fa-blogger" aria-hidden="true" style="font-size: 2.5rem"></i>
+                    </a>
+                </li>
+            <% } %>
+            <li class="nav-item">
+                <a class="nav-link" href="/medicines">
+                    <i class="fa fa-capsules" style="font-size: 2.5rem;"></i>
+                </a>
+            </li>
+            <% if(role && role !== "Admin") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blood_pressure">
+                        <i class="fa fa-heart" aria-hidden="true" style="font-size: 2.5rem"></i></a>
+                </li>
+            <% } %>
+            <% if(role && role === "Doctor") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/appointment/doctor">
+                        <i class="fa-solid fa-calendar-check" aria-hidden="true" style="font-size: 2.5rem"></i></a>
+                </li>
+            <% } %>
+            <% if(role && role === "Patient") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/appointment/patient">
+                        <i class="fa fa-calendar-check" aria-hidden="true" style="font-size: 2.5rem"></i></a>
+                </li>
+            <% } %>
+            <% if(role && role !== "Admin") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/prescription">
+                        <i class="fa fa-file-prescription" aria-hidden="true" style="font-size: 2.5rem"></i>
+                    </a>
+                </li>
+            <% } %>
+            <% if(role && role === "Admin") { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/manage_account">
+                        <i class="fa fa-gears" aria-hidden="true" style="font-size: 2rem"></i>
+                    </a>
+                </li>
+            <% } %>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <% if(role && role !== "Admin") { %>
+                        <a class="dropdown-item" href="/personal_info">
+                            <i class="bi bi-info-circle"></i>
+                            Personal information
+                        </a>
+                    <% } %>
+
+                    <% if(role && role !== "Admin") { %>
+                        <a class="dropdown-item" href="/articles/my_articles">
+                            <i class="bi bi-info-circle"></i>
+                            My articles
+                        </a>
+                    <% } %>
+
+
+                    <% if(!role) { %>
+                        <a class="dropdown-item" href="/login">
+                            <i class="bi bi-box-arrow-in-left"></i>
+                            Log in/ Register
+                        </a>
+                    <% } else { %>
+                        <a class="dropdown-item" href="/logout">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Log out
+                        </a>
+                    <% } %>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!--    <img src="/home/assets/img/background/2023.png" height="100px">-->
+</nav>

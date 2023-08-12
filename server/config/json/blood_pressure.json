@@ -1,0 +1,18 @@
+[
+    {
+        "createDate": "10-11-2022",
+        "doctorIdInHospital": "1",
+        "patientIdInHospital": "1",
+        "sys": 100,
+        "dia": 100,
+        "pulse": 100
+    },
+    {
+        "createDate": "10-11-2022",
+        "doctorIdInHospital": "1",
+        "patientIdInHospital": "1",
+        "sys": 100,
+        "dia": 100,
+        "pulse": 100
+    }
+]
